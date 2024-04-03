@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sprint1_Nivell3</title>
+  </head>
+  <body>
+    <h1>Sprint 1 - Nivell 3 - Exercici 1</h1>
+    <details>
+      Crea una matriu de deu funcions i emplena-la mitjançant un bucle de manera
+      que cada <br />
+      funció compti del 0 al 9 per la consola. Invoca cada funció de l'array
+      iterativament. <br />
+      Haurà de mostrar-se per consola el compte del 0 al 9 deu vegades.<br />
+    </details>
+    <hr />
+    <button onclick="comprovem()">Clicka per comprovar</button>
+    <script>
+      function comprovem() {
+        let matriuFuncions = [];
+
+        function omplirMatriu() {
+          let i = 0;
+          let j = 0;
+          for (i = 0; i < 10; i++) {
+            matriuFuncions[i] = function () {
+              for (j = 0; j < 10; j++) {
+                console.log(j);
+              }
+            };
+          }
+          for (let i = 0; i < 10; i++) {
+            matriuFuncions[i]();
+            //console.log(matriuFuncions);
+          }
+        }
+        omplirMatriu();
+      }
+    </script>
+  </body>
+</html>

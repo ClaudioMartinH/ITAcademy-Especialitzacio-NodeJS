@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sprint1_Nivell3</title>
+  </head>
+  <body>
+    <h1>Sprint 1 - Nivell 3 - Exercici 2</h1>
+    <details>
+      Crea una funció anònima autoinvocable igualada a una variable que mostri
+      per <br />
+      consola el nom de l'usuari/ària rebut com a paràmetre.
+    </details>
+    <hr />
+    <p>
+      <input type="text" id="nomUsuari" /> Introdueix el nom per mostrar-lo en
+      consola
+    </p>
+    <hr />
+    <button onclick="comprovem()">Clicka per comprovar</button>
+    <script>
+      function comprovem() {
+        let nomUsuari = document.getElementById("nomUsuari").value;
+        let mostrarEnConsola = (function (nomUsuari) {
+          console.log(`El nom introduit és: ${nomUsuari}`);
+        })(nomUsuari);
+      }
+    </script>
+  </body>
+</html>
