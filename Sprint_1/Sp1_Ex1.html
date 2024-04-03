@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sprint1</title>
+  </head>
+  <body>
+    <h1>Exercici 1</h1>
+    <details>
+      Crea una funció que mostri per consola el nom d'usuari/ària en invocar-la
+      passant-li el nom com a paràmetre
+    </details>
+    <p>
+      Introdueix el nom que vols mostrar en consola
+      <input type="text" id="nomUsuari" />
+    </p>
+    <button onclick="comprovem()">click per mostrar</button>
+    <script>
+      function comprovem() {
+        let nomIntroduit = document.getElementById("nomUsuari").value;
+
+        function nomEnConsola(nomIntroduit) {
+          console.log("El nom introduit és: ", nomIntroduit);
+        }
+        nomEnConsola(nomIntroduit);
+      }
+    </script>
+  </body>
+</html>
