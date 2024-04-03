@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sprint1_Nivell2</title>
+  </head>
+  <body>
+    <h1>Sprint 1 - Nivell 2 - Exercici 2</h1>
+    <details>
+      Invoca una funció que retorni un valor des de dins d'una template literal.
+    </details>
+    <hr>
+    <button onclick="comprovem()"> Clicka per comprovar </button>
+    <script>
+      function comprovem() {
+        function dataHora() {
+          return new Date().toLocaleTimeString();
+        }
+        console.log(`Són les: ${dataHora()}`);
+      }
+    </script>
+  </body>
+</html>
