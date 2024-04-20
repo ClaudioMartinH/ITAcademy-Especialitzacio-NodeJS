@@ -1,0 +1,36 @@
+{
+  "name": "todolist_cli_frontend",
+  "version": "1.0.0",
+  "description": "una todo list hecha en typescript, con tdd con vitest, funcionalidades cli y un pequeño frontend",
+  "main": "index.js",
+  "scripts": {
+    "test": "vitest",
+    "build": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ClaudioMartinH/ITAcademy-Especialitzacio-NodeJS.git"
+  },
+  "keywords": [
+    "sprint",
+    "todolist",
+    "tdd"
+  ],
+  "author": "Claudio Martin Herranz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ClaudioMartinH/ITAcademy-Especialitzacio-NodeJS/issues"
+  },
+  "homepage": "https://github.com/ClaudioMartinH/ITAcademy-Especialitzacio-NodeJS#readme",
+  "devDependencies": {
+    "@types/node": "20.12.7",
+    "ts-node": "10.9.2",
+    "typescript": "5.4.5",
+    "vitest": "1.5.0"
+  },
+  "dependencies": {
+    "chalk": "5.3.0",
+    "commander": "12.0.0",
+    "express": "4.19.2"
+  }
+}
