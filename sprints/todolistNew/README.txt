@@ -2,7 +2,7 @@ para ejecutar el proyexto hay que copiarse el repositorio y bajarselo, tener nod
 se necesita asimismo instalar typescript, vitest, chalk y express; y se puede hacer ejecutando el comando:
 (npm install) una vez tengamos abierto el proyecto en nuestro editor de codigo en la carpeta que contenga el proyecto
 
-para levantar el servidor basta con entrar desde consola a la carpeta server y ejecutar el comando node server.js.
+para levantar el servidor basta con entrar desde consola y ejecutar el comando node server.js.
 Así se levantará un servidor en el puerto 8000 del localhost.
 
 el archivo principal del proyecto es index.ts, compilado automaticamente a index.js
