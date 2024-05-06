@@ -1,15 +1,24 @@
 {
   "compilerOptions": {
-    "target": "ES6", // O el nivel de JavaScript al que quieras compilar
-    "module": "NodeNext", // O el sistema de módulos que prefieras
-    "strict": true, // Habilita todas las opciones estrictas de TypeScript
-    "outDir": "./dist", // Directorio de salida para los archivos compilados
-    "esModuleInterop": true, // Habilita la interoperabilidad con módulos de tipo CommonJS
-    "forceConsistentCasingInFileNames": true, // Asegura consistencia en mayúsculas y minúsculas
-    "removeComments": true // Elimina comentarios del código compilado
+    "target": "ES6", 
+    "module": "NodeNext", 
+    "strict": true, 
+    "outDir": "./dist", 
+    "esModuleInterop": true, 
+    "forceConsistentCasingInFileNames": true, 
+    "removeComments": true, 
+    "skipLibCheck": true,
+    "allowSyntheticDefaultImports": true,
+    "noEmitHelpers": true,
+    "noImplicitReturns": true,
+    //"noUnusedLocals": true,
+    "noUnusedParameters": true,
   },
   "include": [
-    "./src/**/*" // Directorio donde se encuentran tus archivos TypeScript
+    "./src/**/*" 
+  ],
+  "exclude": [
+    "node_modules", 
   ]
 }
 // {

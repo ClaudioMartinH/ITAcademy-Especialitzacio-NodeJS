@@ -18,6 +18,7 @@
   ],
   "author": "Claudio Martin Herranz",
   "license": "ISC",
+  "repository": "https://github.com/ClaudioMartinH/ITAcademy-Especialitzacio-NodeJS/tree/main/sprints/todolistNew",
   "devDependencies": {
     "@types/node": "^20.12.8",
     "nodemon": "^3.1.0"

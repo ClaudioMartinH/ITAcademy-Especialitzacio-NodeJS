@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ToDoList</title>
+    <link rel="stylesheet" href="./css/estilos.css" />
+  </head>
+  <header class="encabezado">To Do List</header>
+  <body>
+    <!-- <script>
+      import {afegirTasca, completarTasca, eliminarTasca, mostrarTasca} from "./dist/index.js"
+    </script> -->
+    <div class="container">
+      Introduce la tarea a registrar <br />
+      o bien el numero de tarea a completar o eliminar
+      <hr />
+      <p>
+        <textarea
+          id="tskUs"
+          type="text"
+          columns="50"
+          rows="4"
+          style="width: 400px; height: 50px"
+          placeholder="Introduce la tarea a registrar o bien el numero de tarea a completar o eliminar"
+        ></textarea>
+      </p>
+      <button id="bot1">AGREGAR<br />TAREA</button>
+      <button id="bot2">ELIMINAR<br />TAREA</button>
+      <button id="bot3">COMPLETAR<br />TAREA</button>
+      <button id="bot4">MOSTRAR<br />PENDIENTES</button>
+    </div>
+    <div class="container2">
+      Estas son tus tareas registradas
+      <p id="showTsk"></p>
+    </div>
+  </body>
+  <script type="module">  
+  import { tasques, afegirTasca, completarTasca, mostrarTasca, eliminarTasca } from "./dist/index.js"
+    document.getElementById("bot1").addEventListener("click", afegirTasca);
+    document.getElementById("bot2").addEventListener("click", eliminarTasca);
+    document.getElementById("bot3").addEventListener("click", completarTasca);
+    document.getElementById("bot4").addEventListener("click", mostrarTasca);
+  </script>
+  <footer>Claudio Martin Herranz 2024 || IT Academy Barcelona Activa</footer>
+</html>

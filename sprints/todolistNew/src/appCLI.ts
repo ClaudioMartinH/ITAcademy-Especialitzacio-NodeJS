@@ -26,7 +26,6 @@ function mostrarMenu() {
 
 function afegirTasca() {
   let index = 0;
-  let nombre = "";
   rl.question(chalk.bgGrey("Escriu la tasca: "), (nombre) => {
     tasques.push({index, nombre, completada: false });
     console.log(chalk.green.bold("Tasca afegida correctament\n"));
