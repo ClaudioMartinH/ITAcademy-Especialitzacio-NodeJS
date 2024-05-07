@@ -34,13 +34,19 @@ export function mostrarTasca(): void {
   const llistaTasques = document.getElementById("showTsk");
   if (llistaTasques !== null) {
     llistaTasques.innerHTML = "";
+    if (tasques.length === 0) {
+      llistaTasques.innerHTML = "No hay tareas que mostrar";
+    } else {
     tasques.forEach((tarea, index) => {
-      const tareaHTML = `${index + 1} - ${tarea.nombre} ${
-        tarea.completada ? "✅ Completada" : "❌ Pendiente"
-      }</br>`;
+      const tareaHTML = `<div class="container3">   ${index + 1}    -  ${
+        tarea.nombre
+      }    -  ${
+        tarea.completada ? "    Completada ✅" : "    Pendiente ❌"
+      }</div>`;
       llistaTasques.innerHTML += tareaHTML;
     });
   }
+}
 }
 export function eliminarTasca(): void {
   const tascaUsuari = document.getElementById("tskUs") as HTMLInputElement;
@@ -52,9 +58,9 @@ export function eliminarTasca(): void {
       indexUsuari < tasques.length
     ) {
       tasques.splice(indexUsuari, 1);
-      mostrarTasca();
     }
-  } else alert("Debes introducir un número de tarea válido");
+  }
+  mostrarTasca();
   netejarText();
 }
 
@@ -69,10 +75,8 @@ export function completarTasca(): void {
       tasques[indexUsuari] !== undefined
     ) {
       tasques[indexUsuari].completada = true;
-      mostrarTasca();
-    } else {
-      alert("La tarea indicada no existe");
-    }
+    } 
   }
+  mostrarTasca();
   netejarText();
 }

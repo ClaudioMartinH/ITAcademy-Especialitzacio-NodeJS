@@ -14,22 +14,23 @@
       <hr />
       <p>
         <textarea
+          title="Introduce aqui el texto de tu tarea o bien el número de tarea a completar o eliminar"
           id="tskUs"
           type="text"
           columns="50"
           rows="4"
-          style="width: 250px; height: 50px"
-          placeholder="Introduce la tarea a registrar o bien el numero de tarea a completar o eliminar"
+          placeholder="Escribe aquí"
         ></textarea>
       </p>
-      <button id="bot1">AGREGAR<br />TAREA</button>
-      <button id="bot2">ELIMINAR<br />TAREA</button>
-      <button id="bot3">COMPLETAR<br />TAREA</button>
+      <button title="Introduce tu tarea y haz clic aquí" id="bot1">AGREGAR<br />TAREA</button>
+      <button title="Introduce el número de tarea a eliminar y haz clic aquí" id="bot2">ELIMINAR<br />TAREA</button>
+      <button title="Introduce el número de tarea a completar y haz clic aquí" id="bot3">COMPLETAR<br />TAREA</button>
       <button id="bot4">MOSTRAR<br />TAREAS</button>
     </div>
     <div class="container2">
       Estas son tus tareas registradas
-      <p id="showTsk"></p>
+      <hr width="cover" />
+      <div id="showTsk"></div>
     </div>
   </body>
   <script type="module">
@@ -38,12 +39,14 @@
       afegirTasca,
       completarTasca,
       mostrarTasca,
-      eliminarTasca,
-    } from "./dist/index.js";
+      eliminarTasca
+    } from "./dist/src/index.js";
     document.getElementById("bot1").addEventListener("click", afegirTasca);
     document.getElementById("bot2").addEventListener("click", eliminarTasca);
     document.getElementById("bot3").addEventListener("click", completarTasca);
     document.getElementById("bot4").addEventListener("click", mostrarTasca);
   </script>
-  <footer>Claudio Martin Herranz 2024 || IT Academy Barcelona Activa</footer>
+  <footer>Claudio Martin Herranz 2024 || IT Academy Barcelona Activa<br>
+    <a href="https://github.com/ClaudioMartinH/ITAcademy-Especialitzacio-NodeJS">Visita mi GitHub</a>
+  </footer>
 </html>

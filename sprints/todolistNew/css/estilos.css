@@ -1,7 +1,7 @@
 .encabezado {
-  background: black;
+  background: rgba(0, 0, 0, 0.534);
   color: azure;
-  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   font-size: xx-large;
   text-align: center;
   margin-top: 20px;
@@ -20,78 +20,107 @@
   background: rgba(134, 177, 181, 0.664);
   border-radius: 10px;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.163);
-  margin-top: 20px;
-  margin-bottom: 20px;
-  margin-left: 20px;
-  margin-right: 20px;
-  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-display: inline;
 }
 .container2 {
   width: auto;
   margin: auto;
-  padding: 10px;
+  padding: 5px;
   background: rgba(95, 113, 135, 0.411);
   border-radius: 10px;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
-  margin-top: 20px;
-  margin-bottom: 20px;
-  margin-left: 20px;
-  margin-right: 20px;
-  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  margin-left: 15px;
+  margin-right: 15px;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   }
 button {
   color: white;
-  background: cadetblue;
+  background: rgba(39, 71, 72, 0.906);
   padding: 10px;
   border-radius: 10px;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: monospace;
 }
 
 footer {
-  background: black;
+  background: rgba(0, 0, 0, 0.507);
   color: azure;
-  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-size: small;
   text-align: center;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  margin-left: 20px;
-  margin-right: 20px;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  padding-left: 20px;
-  padding-right: 20px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  margin-left: 15px;
+  margin-right: 15px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
   
 }
 p {
-  font-family:fantasy;
-  font-size: medium;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: small;
+  font-style: normal;
   text-align: center;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  margin-left: 20px;
-  margin-right: 20px;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  padding-left: 20px;
-  padding-right: 20px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-left: 5px;
+  margin-right: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
 }
 div {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: medium;
   text-align: center;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  margin-left: 20px;
-  margin-right: 20px;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  padding-left: 20px;
-  padding-right: 20px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  margin-left: 15px;
+  margin-right: 15px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 body {
   background-image: url('../css/img/pexels-karolina-grabowska-4464438.jpg');
   background-size: cover;
+}
+textarea {
+  width: 250px;
+  height: 50px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: small;
+  text-align: start;
+  margin-top: 1px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  padding-left: 5px;
+  padding-right: 5px;
+  background-color: rgba(240, 255, 255, 0.492);   
+         
+}
+.container3{
+  width: auto;
+  margin: auto;
+  padding: 5px;
+  background: rgba(91, 121, 158, 0.638);
+  border-radius: 5px;
+  box-shadow: 5px 5px 10px rgba(54, 39, 39, 0.703);
+  margin-top: 1px;
+  margin-bottom: 1px;
+  margin-left: 1px;
+  margin-right: 1px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: small;
 }
