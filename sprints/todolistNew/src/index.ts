@@ -37,39 +37,42 @@ export function mostrarTasca(): void {
     tasques.forEach((tarea, index) => {
       const tareaHTML = `${index + 1} - ${tarea.nombre} ${
         tarea.completada ? "✅ Completada" : "❌ Pendiente"
-      }`;
+      }</br>`;
       llistaTasques.innerHTML += tareaHTML;
     });
-  } else { alert("No hay tareas que mostrar")}
+  }
 }
 export function eliminarTasca(): void {
   const tascaUsuari = document.getElementById("tskUs") as HTMLInputElement;
   if (tascaUsuari !== null) {
     const indexUsuari = parseInt(tascaUsuari.value) - 1;
-    if (!isNaN(indexUsuari) && indexUsuari >= 0 && indexUsuari < tasques.length) {
+    if (
+      !isNaN(indexUsuari) &&
+      indexUsuari >= 0 &&
+      indexUsuari < tasques.length
+    ) {
       tasques.splice(indexUsuari, 1);
-    } else {
-      alert("La tarea indicada no existe");
+      mostrarTasca();
     }
-  } 
+  } else alert("Debes introducir un número de tarea válido");
   netejarText();
-  mostrarTasca()
 }
 
 export function completarTasca(): void {
   const tascaUsuari = document.getElementById("tskUs") as HTMLInputElement;
   if (tascaUsuari !== null) {
     const indexUsuari = parseInt(tascaUsuari.value) - 1;
-    if (!isNaN(indexUsuari) && indexUsuari >= 0 && indexUsuari < tasques.length) {
+    if (
+      !isNaN(indexUsuari) &&
+      indexUsuari >= 0 &&
+      indexUsuari < tasques.length &&
+      tasques[indexUsuari] !== undefined
+    ) {
       tasques[indexUsuari].completada = true;
+      mostrarTasca();
     } else {
       alert("La tarea indicada no existe");
     }
-  } 
+  }
   netejarText();
-  mostrarTasca();
 }
-
-
-
-
