@@ -52,7 +52,9 @@ export function eliminarTasca(): void {
   const tascaUsuari = document.getElementById("tskUs") as HTMLInputElement;
   if (tascaUsuari !== null) {
     const indexUsuari = parseInt(tascaUsuari.value) - 1;
-    if (
+    if (tasques.length === 0){
+      alert("No hay tareas que eliminar");
+    } else if (
       !isNaN(indexUsuari) &&
       indexUsuari >= 0 &&
       indexUsuari < tasques.length
@@ -68,7 +70,9 @@ export function completarTasca(): void {
   const tascaUsuari = document.getElementById("tskUs") as HTMLInputElement;
   if (tascaUsuari !== null) {
     const indexUsuari = parseInt(tascaUsuari.value) - 1;
-    if (
+    if (tasques.length === 0){
+      alert("No hay tareas que completar");
+    } else if (
       !isNaN(indexUsuari) &&
       indexUsuari >= 0 &&
       indexUsuari < tasques.length &&

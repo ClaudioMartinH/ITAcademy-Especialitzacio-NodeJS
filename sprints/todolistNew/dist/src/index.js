@@ -42,7 +42,10 @@ export function eliminarTasca() {
     const tascaUsuari = document.getElementById("tskUs");
     if (tascaUsuari !== null) {
         const indexUsuari = parseInt(tascaUsuari.value) - 1;
-        if (!isNaN(indexUsuari) &&
+        if (tasques.length === 0) {
+            alert("No hay tareas que eliminar");
+        }
+        else if (!isNaN(indexUsuari) &&
             indexUsuari >= 0 &&
             indexUsuari < tasques.length) {
             tasques.splice(indexUsuari, 1);
@@ -55,7 +58,10 @@ export function completarTasca() {
     const tascaUsuari = document.getElementById("tskUs");
     if (tascaUsuari !== null) {
         const indexUsuari = parseInt(tascaUsuari.value) - 1;
-        if (!isNaN(indexUsuari) &&
+        if (tasques.length === 0) {
+            alert("No hay tareas que completar");
+        }
+        else if (!isNaN(indexUsuari) &&
             indexUsuari >= 0 &&
             indexUsuari < tasques.length &&
             tasques[indexUsuari] !== undefined) {

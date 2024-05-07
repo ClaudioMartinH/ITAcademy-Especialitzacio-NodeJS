@@ -8,11 +8,11 @@ const rl = createInterface({
 function mostrarMenu() {
     console.log(chalk.bgBlueBright.bold("\n-----To Do List App-----\n"));
     console.log(chalk.cyanBright("Menú d'opcions"));
-    console.log("1. Afegir tasca");
-    console.log("2. Eliminar tasca");
-    console.log("3. Completar tasques");
-    console.log("4. Mostrar tasques");
-    console.log("5. Sortir");
+    console.log("1. Afegir tasca ✳️");
+    console.log("2. Eliminar tasca ❌");
+    console.log("3. Completar tasques ✅");
+    console.log("4. Mostrar tasques 👀");
+    console.log("5. Sortir 🔚");
     console.log("\n");
 }
 function afegirTasca() {
