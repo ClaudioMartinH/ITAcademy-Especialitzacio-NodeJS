@@ -6,15 +6,17 @@ interface Tasca {
 export const tasques: Tasca[] = [];
 
 export function netejarText(): void {
-  const tascaUsuari = document.getElementById("tskUs") as HTMLInputElement;
+  const tascaUsuari:HTMLInputElement = document.getElementById("tskUs") as HTMLInputElement;
   if (tascaUsuari !== null) {
     tascaUsuari.value = "";
   }
 }
 
 export function afegirTasca(): void {
-  const tascaUsuari = document.getElementById("tskUs") as HTMLInputElement;
-  let tascaTexto = "";
+  const tascaUsuari: HTMLInputElement = document.getElementById(
+    "tskUs"
+  ) as HTMLInputElement;
+  let tascaTexto:string = "";
   if (tascaUsuari !== null && tascaUsuari.value.trim() !== "") {
     tascaTexto = tascaUsuari.value.trim();
     const novaTasca: Tasca = {
@@ -31,16 +33,16 @@ export function afegirTasca(): void {
 }
 
 export function mostrarTasca(): void {
-  const llistaTasques = document.getElementById("showTsk");
+  const llistaTasques:HTMLElement|null = document.getElementById("showTsk");
   if (llistaTasques !== null) {
     llistaTasques.innerHTML = "";
     if (tasques.length === 0) {
       llistaTasques.innerHTML = "No hay tareas que mostrar";
     } else {
     tasques.forEach((tarea, index) => {
-      const tareaHTML = `<div class="container3">   ${index + 1}    -  ${
-        tarea.nombre
-      }    -  ${
+      const tareaHTML:string = `<div title="${tarea.nombre} ${
+        tarea.completada ? "| Completada" : "| Pendiente"
+      }" class="container3">   ${index + 1}    -  ${tarea.nombre}    -  ${
         tarea.completada ? "    Completada ✅" : "    Pendiente ❌"
       }</div>`;
       llistaTasques.innerHTML += tareaHTML;
@@ -49,9 +51,11 @@ export function mostrarTasca(): void {
 }
 }
 export function eliminarTasca(): void {
-  const tascaUsuari = document.getElementById("tskUs") as HTMLInputElement;
+  const tascaUsuari: HTMLInputElement = document.getElementById(
+    "tskUs"
+  ) as HTMLInputElement;
   if (tascaUsuari !== null) {
-    const indexUsuari = parseInt(tascaUsuari.value) - 1;
+    const indexUsuari:number = parseInt(tascaUsuari.value) - 1;
     if (tasques.length === 0){
       alert("No hay tareas que eliminar");
     } else if (
@@ -67,9 +71,11 @@ export function eliminarTasca(): void {
 }
 
 export function completarTasca(): void {
-  const tascaUsuari = document.getElementById("tskUs") as HTMLInputElement;
+  const tascaUsuari:HTMLInputElement = document.getElementById(
+    "tskUs"
+  ) as HTMLInputElement;
   if (tascaUsuari !== null) {
-    const indexUsuari = parseInt(tascaUsuari.value) - 1;
+    const indexUsuari:number = parseInt(tascaUsuari.value) - 1;
     if (tasques.length === 0){
       alert("No hay tareas que completar");
     } else if (

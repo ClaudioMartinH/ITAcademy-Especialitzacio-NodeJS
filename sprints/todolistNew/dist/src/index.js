@@ -32,7 +32,7 @@ export function mostrarTasca() {
         }
         else {
             tasques.forEach((tarea, index) => {
-                const tareaHTML = `<div class="container3">   ${index + 1}    -  ${tarea.nombre}    -  ${tarea.completada ? "    Completada ✅" : "    Pendiente ❌"}</div>`;
+                const tareaHTML = `<div title="${tarea.nombre} ${tarea.completada ? "| Completada" : "| Pendiente"}" class="container3">   ${index + 1}    -  ${tarea.nombre}    -  ${tarea.completada ? "    Completada ✅" : "    Pendiente ❌"}</div>`;
                 llistaTasques.innerHTML += tareaHTML;
             });
         }
